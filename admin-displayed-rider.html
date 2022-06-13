@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" type="image/jpg" href="images/logo.svg">
+    <title>Admin | Displayed Riders</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Tracking">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Tracking"/>
+    <meta name="author" content="CS4"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+
+    <head>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"><i class="fa-solid fa-bars"></i></a>
+            <a href="admin-home.html"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;Home</a>
+            <a href="admin-rider-list.html"><i class="fa-solid fa-list-ol"></i>&nbsp;&nbsp;&nbsp;Riders List</a>
+            <a href="admin-displayed-rider.html"><i class="fa-solid fa-motorcycle"></i>&nbsp;&nbsp;&nbsp;Displayed Riders</a>
+            <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;&nbsp;&nbsp;Logout</a>
+        </div>
+        
+        <!-- Use any element to open the sidenav -->
+        <span id="main3" class="menu-button2" onclick="openNav2()"><i class="fa-solid fa-bars"></i></span>
+
+        <script type="text/javascript" src="side-nav.js"></script>
+        
+        <div class="see-map-button">
+            <a href="admin-home.html"><i class="fa-solid fa-map"></i>&nbsp;&nbsp;See in Map</a>
+        </div>
+
+        <center>
+            <div id="main2" class="add-rider">
+                <div>
+                    <h1>Displayed Rider</h1>
+                </div>
+                <div style="overflow-x:auto;">
+                    <table>
+                      <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th></th>
+                      </tr>
+                      <tr>
+                        <td>Juan Dela Cruz</td>
+                        <td>juandelacruz@gmail.com</td>
+                        <td>09123456789</td>
+                        <td class="rider-button">
+                            <button class="remove-rider-button2">
+                                <i class="fa-solid fa-trash-can"></i>&nbsp;&nbsp;Remove in Map
+                            </button>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+            </div>
+        </center>
+    </body>
+</html>

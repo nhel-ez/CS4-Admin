@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" type="image/jpg" href="images/logo.svg">
+    <title>Create New Account</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Tracking">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Tracking"/>
+    <meta name="author" content="CS4"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="login-reg.css">
+    <head>
+    </head>
+    <body>
+        <center>
+            <div class="reg">
+                <form action="admin-home.html" method="post"></form>
+                <div class="login-reg-logo"><a href="index.html"><img src="images/logo.svg" alt="logo"></a></div>
+                    <div class="container">
+                        <div class="reg-input">
+                            <input type="email" placeholder="Email" name="email" value="" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                            <i class="fa-solid fa-envelope reg-icon"></i>
+                        </div>
+
+                        <div class="reg-input">
+                            <input type="tel" placeholder="Phone Number" name="phone" value="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                            <i class="fa-solid fa-phone reg-icon"></i>
+                        </div>
+
+                        <div class="reg-input">
+                            <input type="name" placeholder="Company Name" name="name" value="" pattern="^[A-Za-z]" required>
+                            <i class="fa-solid fa-building reg-icon"></i>
+                        </div>
+
+                        <div class="reg-input">
+                            <input type="name" placeholder="First Name" name="name" value="" pattern="^[A-Za-z]" required>
+                            <i class="fa-solid fa-user reg-icon"></i>
+                        </div>
+
+                        <div class="reg-input">
+                            <input type="name" placeholder="Last Name" name="name" value="" pattern="^[A-Za-z]" required>
+                            <i class="fa-solid fa-user reg-icon"></i>
+                        </div>
+                  
+                        <div class="reg-input">
+                            <input id="password" type="password" placeholder="Password" name="password" value="" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}" required>
+                            <i class="fa-solid fa-lock reg-icon"></i>
+                        </div>
+
+                        <div class="reg-input">
+                            <input id="confirm_password" type="password" placeholder="Confirm Password" name="password" value="" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}" required>
+                            <i class="fa-solid fa-lock reg-icon"></i>
+                        </div>
+
+                        <div class="agree">
+                        <input type="checkbox" id="" name="vehicle1" value="">
+                            <label for="vehicle1"> I agree on terms and policy</label><br>
+                        </div>
+
+                        <div class="reg-button">
+                            <button type="submit">Register</button>
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    var password = document.getElementById("password")
+                      , confirm_password = document.getElementById("confirm_password");
+                    
+                    function validatePassword(){
+                      if(password.value != confirm_password.value) {
+                        confirm_password.setCustomValidity("Passwords do not match");
+                      } else {
+                        confirm_password.setCustomValidity('');
+                      }
+                    }
+                    
+                    password.onchange = validatePassword;
+                    confirm_password.onkeyup = validatePassword;
+                </script>
+            </div>
+        </center>
+    </body>
+</html>

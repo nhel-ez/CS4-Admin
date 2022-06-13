@@ -1,0 +1,382 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* Login */
+
+.login {
+    margin-top: 150px;
+}
+
+.login-reg-logo {
+    margin-bottom: 10px;
+}
+
+.login-input input {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: none;
+}
+
+.login-input input:hover {
+    border: 1px solid #FF3030;
+}
+
+.login-input input[placeholder], input[value] {
+    text-indent: 30px;
+    color: black;
+}
+
+.login-icon {
+    position: absolute;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    margin-left: -294px;
+    float: left;
+    color: #FF3030;
+}
+
+.eye-open {
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: -35px;
+    float: left;
+
+}
+
+.login-button button {
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #FF3030;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.login-button button:hover {
+    opacity: 85%;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.forgot-password a {
+    color: #FF3030;
+    font-size: 15px;
+}
+
+.forgot-password a {
+    opacity: 85%;
+}
+
+.create-account-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.create-account-button span {
+    font-size: 10px;
+    color: white;
+}
+
+.line {
+    margin-top: -5px;
+    width: 115px;
+    height: 1px;
+    background-color: white;
+}
+
+.create-account-button a {
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #FF3030;
+    color: white;
+    font-size: 15px;
+}
+
+.create-account-button a:hover {
+    opacity: 85%;
+}
+
+/* Registration */
+
+.reg {
+    margin-top: 30px;
+}
+
+.reg-input input {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: none;
+}
+
+.reg-input input:hover {
+    border: 1px solid #FF3030;
+}
+
+.reg-input input[placeholder], input[value] {
+    text-indent: 30px;
+    color: black;
+}
+
+.reg-icon {
+    position: absolute;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    margin-left: -294px;
+    float: left;
+    color: #FF3030;
+}
+
+.reg-button button {
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #FF3030;
+    color: white;
+    border: none;
+}
+
+.reg-button button:hover {
+    opacity: 85%;
+}
+
+.agree {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.agree label {
+    font-size: 12px;
+    color: white;
+}
+
+/* Admin Home */
+#map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+#search { 
+    position: absolute; 
+    width: 50%; 
+}
+
+/* Side Menu */
+
+.sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FF3030;
+    background-image: linear-gradient(60deg, #240c0a 0%, #000000 74%);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #FF3030;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 28px;
+    margin-top: 13px;
+    margin-left: 50px;
+    color: #FF3030;
+}
+
+.sidenav .closebtn {
+    color: white;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+#main2 {
+    transition: margin-left .5s;
+}
+
+#main3 {
+    transition: margin-left .5s;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.menu-button {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #FF3030;
+    font-size: 27px;
+}
+
+.menu-button:hover {
+    opacity: 85%;
+}
+
+/* Add Rider */
+
+.add-rider {
+    padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu-button2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #FF3030;
+    font-size: 27px;
+    float: left;
+}
+
+.menu-button2:hover {
+    opacity: 85%;
+}
+
+.see-map-button {
+    float: right;
+    width: 140px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 17px; 
+    margin-top: 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: #FF3030;
+    border: none;
+}
+
+.see-map-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.see-map-button:hover {
+    opacity: 85%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: none;
+}
+ 
+th {
+    background-color: #a10000;
+    opacity: 85%;
+    color: white;
+    text-align: left;
+    padding: 15px;
+}
+
+td {
+    background-color: #d1d1d1;
+    opacity: 85%;
+    color: black;
+    text-align: left;
+    padding: 15px;
+}
+  
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+.rider-button {
+    width: 20%;
+    
+}
+
+.add-rider-button{
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    background-color: #20A1FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-rider-button:hover {
+    opacity: 85%;
+}
+
+.remove-rider-button{
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    background-color: #FF3030;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.remove-rider-button:hover {
+    opacity: 85%;
+}
+
+/* Displayed Rider */
+
+.remove-rider-button2 {
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+    background-color: #FF3030;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    float: right;
+}
+
+.remove-rider-button2:hover {
+    opacity: 85%;
+}
